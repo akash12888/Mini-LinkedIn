@@ -1,0 +1,16 @@
+{
+  "name": "mini-linkedin",
+  "version": "1.0.0",
+  "description": "A mini LinkedIn clone with modern tech stack",
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "preview": "cd frontend && npm run preview",
+    "install-frontend": "cd frontend && npm install",
+    "install-backend": "cd backend && npm install",
+    "install": "npm run install-frontend && npm run install-backend"
+  },
+  "keywords": ["react", "vite", "tailwind", "linkedin-clone"],
+  "author": "",
+  "license": "MIT"
+}

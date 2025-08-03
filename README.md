@@ -1,7 +1,8 @@
 # Mini LinkedIn
 
 A mini LinkedIn built with the latest technology stack.
-# link https://mini-linkedin-1-14v9.onrender.com
+
+**🌐 Live Demo:** [https://mini-linkedin-1-14v9.onrender.com](https://mini-linkedin-1-14v9.onrender.com)
 
 ## 🚀 Tech Stack
 
@@ -67,25 +68,31 @@ A mini LinkedIn built with the latest technology stack.
    NODE_ENV=development
    ```
 
-4. **Start the development server**
+4. **Start the development servers**
    ```bash
+   # Terminal 1 - Start frontend
+   cd frontend
+   npm run dev
+   
+   # Terminal 2 - Start backend  
+   cd backend
    npm run dev
    ```
-   This starts the Vite development server on `http://localhost:3000`
 
 ### Available Scripts
 
 From the root directory:
-- `npm run dev` - Start the frontend development server
-- `npm run build` - Build the frontend for production
-- `npm run preview` - Preview the production build
 - `npm run install-frontend` - Install only frontend dependencies
 - `npm run install-backend` - Install only backend dependencies
 
 From the frontend directory:
-- `npm run dev` - Start Vite development server
+- `npm run dev` - Start Vite development server on `http://localhost:3000`
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
+
+From the backend directory:
+- `npm run dev` - Start Express server on `http://localhost:5000`
+- `npm start` - Start production server
 
 ## 🔧 Environment Variables
 
@@ -165,22 +172,17 @@ mini-linkedin/
 │   ├── middleware/       # Express middleware
 │   ├── package.json      # Backend dependencies
 │   └── .env             # Backend environment variables
-├── package.json          # Root package.json with convenience scripts
-└── .gitignore           # Git ignore rules
+└── package.json          # Root package.json with convenience scripts
 ```
 
 ## 🚀 Development
 
-The development server runs on `http://localhost:3000` with hot module replacement enabled.
+For development, you need to run both frontend and backend servers:
 
-## 📦 Production
+- **Frontend**: Runs on `http://localhost:3000` with hot module replacement enabled
+- **Backend**: Runs on `http://localhost:5000` with API endpoints
 
-To build for production:
-```bash
-npm run build
-```
-
-This creates an optimized build in the `frontend/dist` directory.
+Make sure both servers are running for the full application to work properly.
 
 ## 🔒 Security Notes
 
